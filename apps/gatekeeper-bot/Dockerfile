@@ -19,6 +19,6 @@ RUN chown -R gatekeeper-bot:gatekeeper-bot .
 
 # You can remove this install step if you build with `--bundle` option.
 # The bundled output will include external dependencies.
-RUN npm --prefix gatekeeper-bot --omit=dev -f install
+# RUN npm --prefix gatekeeper-bot --omit=dev -f install
 
 CMD [ "node", "gatekeeper-bot" ]
