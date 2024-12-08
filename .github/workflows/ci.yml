@@ -49,4 +49,4 @@ jobs:
           password: ${{ secrets.GIT_TOKEN }}
 
       - name: 'Build images'
-        run: INPUT_GITHUB_TOKEN=${{ secrets.GIT_TOKEN }} npm run container
+        run: INPUT_GITHUB_TOKEN=${{ secrets.GIT_TOKEN }} npx nx container
